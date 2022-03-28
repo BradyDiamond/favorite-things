@@ -8,8 +8,12 @@ $(document).ready(function() {
   const song = $("input#song").val();
   const drink = $("input#drink").val();
 
-  let array = [name, food, movie, book, song, drink]
-  console.log(array)
+  const array1 = [name, food, movie, book, song, drink]
+  let array2 = []
+  array2.push(array1[0],array1[2],array1[1])
+  console.log(array2)
 
+  $("#output").text("");
+  $("#output").append(array2)
   });
 });
